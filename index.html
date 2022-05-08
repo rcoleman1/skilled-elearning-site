@@ -1,52 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  Get Started
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body>
+    <header>
+      <div>skilled</div>
+      <div>
+        <button>Get Started</button>
+      </div>
+    </header>
 
-  Maximize skill, minimize budget
+    <h1>Maximize skill, minimize budget</h1>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+    <p>
+      Our modern courses across a range of in-demand skills will give you the
+      knowledge you need to live the life you want.
+    </p>
 
-  Get Started
+    <button>Get Started</button>
 
-  Check out our most popular courses!
+    <div class="hero-image" style="background-color: lime">
+      <!-- Mobile 435x409 -->
+      <!-- Tablet 695x723 -->
+      <!-- Dinner 1046x938 -->
 
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
+      <picture>
+        <source
+          srcset="assets/image-hero-mobile.png"
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="assets/image-hero-tablet.png"
+          media="(max-width: 800px)"
+        />
+        <source
+          srcset="assets/image-hero-desktop.png"
+          media="(min-width: 801px)"
+        />
 
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
+        <img src="assets/image-hero-mobile.png" alt="" />
+      </picture>
+    </div>
 
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
+    <div>Check out our most popular course!</div>
 
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
+    <!-- Animation -->
+    <div>
+      <img src="assets/icon-animation.svg" alt="animation icon" />
+      <h3>Animation</h3>
+      <p>
+        Learn the latest animation techniques to create stunning motion design
+        and captivate your audience.
+      </p>
+      <a href="#">Get Started</a>
+    </div>
 
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
+    <!-- Design -->
+    <div>
+      <img src="assets/icon-design.svg" alt="design icon" />
+      <h3>Design</h3>
+      <p>
+        Create beautiful, useable interfaces to help shape the future of how the
+        web looks.
+      </p>
+      <a href="#">Get Started</a>
+    </div>
 
-  Get Started
+    <!-- Photography -->
+    <div>
+      <img src="assets/icon-photography.svg" alt="photography icon" />
+      <h3>Photography</h3>
+      <p>
+        Explore critical fundamentals like lighting, composition, and focus to
+        capture exceptional photos.
+      </p>
+      <a href="#">Get Started</a>
+    </div>
 
-</body>
+    <!-- Crypto -->
+    <div>
+      <img src="assets/icon-crypto.svg" alt="crypto icon" />
+      <h3>Crypto</h3>
+      <p>
+        All you need to know to get started investing in crypto. Go from
+        beginner to advance with this 54 course.
+      </p>
+      <a href="#">Get Started</a>
+    </div>
+
+    <!-- Business -->
+    <div>
+      <img src="assets/icon-business.svg" alt="business icon" />
+      <h3>Business</h3>
+      <p>
+        A step-by-step playbook to help you start, scale, and sustain your
+        business without outside investment
+      </p>
+      <a href="#">Get Started</a>
+    </div>
+
+    <footer>
+      <div>skilled</div>
+      <div>
+        <button>Get Started</button>
+      </div>
+    </footer>
+  </body>
 </html>

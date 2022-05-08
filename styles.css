@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --blue: #666ca3;
+  --dark-blue: #13183f;
+  --grey: #83869a;
+  --pink: #f74780;
+  --light-pink: #ffa7c3;
+  --white: #fff;
+  --pink-gradient: linear-gradient(
+    0deg,
+    rgba(240, 42, 166, 1) 0%,
+    rgba(255, 111, 72, 1) 100%
+  );
+  --purple-gradient: linear-gradient(
+    0deg,
+    rgba(72, 81, 255, 1) 0%,
+    rgba(240, 36, 70, 1) 100%
+  );
+
+  /* Fonot  */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}

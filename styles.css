@@ -17,13 +17,62 @@
     rgba(240, 36, 70, 1) 100%
   );
 
-  /* Fonot  */
+  /* Font Size  */
+  --fts-heading-xl: 56px;
+  --fts-heading-l: 40px;
+  --fts-heading-m: 32px;
+  --fts-heading-s: 24px;
+  --fts-body-m: 18px;
+  --fts-body-s: 16px;
+
+  /* Font Weight */
+  --ftw-light: 300;
+  --ftw-regular: 400;
+  --ftw-medium: 500;
+  --ftw-bold: 700;
+  --ftw-extra-bold: 800;
+}
+
+/* Utility Classes */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.btn-dark:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 * {
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 30px;
+}
+
+.logo {
+  font-size: var(--fts-body-m);
+  font-weight: var(--ftw-bold);
 }

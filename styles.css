@@ -18,8 +18,13 @@
   );
   --purple-gradient: linear-gradient(
     0deg,
-    rgba(72, 81, 255, 1) 0%,
-    rgba(240, 36, 70, 1) 100%
+    rgba(240, 42, 166, 1) 0%,
+    rgba(72, 81, 255, 1) 100%
+  );
+  --purple-gradient-hover: linear-gradient(
+    0deg,
+    rgb(230, 75, 173) 0%,
+    rgb(99, 106, 233) 100%
   );
 
   /* Font Size --------- */
@@ -79,6 +84,15 @@
   color: var(--white);
   background: var(--pink-gradient-hover);
 }
+.btn-purple {
+  color: var(--white);
+  background: var(--purple-gradient);
+}
+
+.btn-purple:hover {
+  color: var(--white);
+  background: var(--purple-gradient-hover);
+}
 
 *,
 *::before,
@@ -114,7 +128,7 @@ a {
   padding: 20px 0 40px;
 }
 .logo {
-  font-size: var(--fts-body-m);
+  font-size: var(--fts-heading-m);
   font-weight: var(--ftw-bold);
 }
 
@@ -194,6 +208,11 @@ a {
 /* FOOTER SECTION ------------- */
 .footer {
   background-color: var(--dark-blue);
+  padding: 40px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 .footer__logo {
   color: var(--white);
@@ -257,8 +276,8 @@ DESKTOP MEDIA QUERY
     background-color: rgb(250, 248, 87);
   }
 
-   /* COURSES SECTION ---------- */
-   .course {
+  /* COURSES SECTION ---------- */
+  .course {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

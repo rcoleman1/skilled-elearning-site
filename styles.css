@@ -55,7 +55,6 @@
   margin: auto;
   max-width: 1200px;
   width: 90%;
-  /* REMOVE background-color: rgb(185, 236, 219); */
 }
 
 .btn {
@@ -222,23 +221,20 @@ a {
 TABLET MEDIA QUERY 
 ----------------------- */
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-  body {
-    background-color: lightblue;
-  }
-
   /* HERO SECTION --------- */
   .hero {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
   }
   .hero__text-box {
-    background-color: rgb(0, 251, 255);
-    padding-top: 50px;
-    width: 60%;
+    padding-top: 80px;
+    width: 50%;
+    max-width: 400px;
   }
   .hero__img-box {
-    background-color: lime;
-    width: 40%;
-    max-height: 500px;
+    width: 50%;
+    height: 450px;
     position: relative;
   }
   .hero__img-mobile {
@@ -246,14 +242,10 @@ TABLET MEDIA QUERY
   }
   .hero__img-tablet {
     display: block;
-    width: 100%;
-    /* min-width: 500px; */
-    min-width: 600px;
-
-    position: relative;
-    bottom: 60%;
-    /* right: 45px; */
-    left: 40%;
+    max-width: 800px;
+    position: absolute;
+    right: -330px;
+    top: -185px;
   }
 
   /* COURSES SECTION ---------- */
@@ -272,8 +264,35 @@ TABLET MEDIA QUERY
 DESKTOP MEDIA QUERY 
 ----------------------- */
 @media only screen and (min-width: 1440px) {
-  body {
-    background-color: rgb(250, 248, 87);
+  /* HERO SECTION --------- */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .hero__text-box {
+    padding-top: 80px;
+    width: 50%;
+    max-width: 400px;
+  }
+  .hero__img-box {
+    width: 50%;
+    height: 450px;
+    position: relative;
+  }
+  .hero__img-mobile {
+    display: none;
+  }
+  .hero__img-tablet {
+    display: none;
+  }
+  .hero__img-desktop {
+    display: block;
+    max-width: 800px;
+    width: 900px;
+    position: absolute;
+    right: -330px;
+    top: -185px;
   }
 
   /* COURSES SECTION ---------- */

@@ -264,7 +264,11 @@ TABLET MEDIA QUERY
 DESKTOP MEDIA QUERY 
 ----------------------- */
 @media only screen and (min-width: 1440px) {
-  /* HERO SECTION --------- */
+  .container {
+      max-width: 1400px;
+  }
+  
+    /* HERO SECTION --------- */
   .hero {
     display: flex;
     justify-content: space-between;
